@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/presentation/widgets/chat/my_message_bubble.dart';
+import 'package:flutter_application_1/presentation/widgets/chat/other_message_bubble.dart';
+import 'package:flutter_application_1/presentation/widgets/shared/message_field_box.dart';
 
 class ChatScreen extends StatelessWidget {
   const ChatScreen({super.key});
@@ -8,39 +10,41 @@ class ChatScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Padding(
-          padding: const EdgeInsets.all(4.0),
+        leading: const Padding(
+          padding:  EdgeInsets.all(4.0),
           child: CircleAvatar(
-            backgroundImage: NetworkImage('https://cdn.britannica.com/73/234573-050-8EE03E16/Cristiano-Ronaldo-ceremony-rename-airport-Santa-Cruz-Madeira-Portugal-March-29-2017.jpg')
+            backgroundImage: NetworkImage(
+                'https://img.freepik.com/vector-premium/hacer-icono-sobre-cristiano-ronaldo-ilustracion-vectorial_969863-30159.jpg'),
           ),
         ),
-        title: Text('ILG & MAMR'),
+        title: Text('CRISTIANO RONALDO'),
         centerTitle: false,
       ),
-      body: _ChatView()
+      body: _ChatView(),
     );
   }
 }
 
 class _ChatView extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.symmetric( horizontal: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Column(
           children: [
-            Expanded(child: ListView.builder(
+            Expanded(
+                child: ListView.builder(
               itemCount: 100,
               itemBuilder: (context, index) {
-                return MyMessageBubble();
+                return (index % 2 == 0)
+                  ? const OtherMessageBubble()
+                  : const MyMessageBubble();
               })),
-            
-          Text('❤️')
-        ],
+              const MessageFieldBox(),
+          ],
+        ),
       ),
-    ),
     );
   }
 }
