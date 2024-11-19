@@ -21,7 +21,7 @@ class ChatScreen extends StatelessWidget {
                 'https://img.freepik.com/vector-premium/hacer-icono-sobre-cristiano-ronaldo-ilustracion-vectorial_969863-30159.jpg'),
           ),
         ),
-        title: const Text('BICHOLOVERS'),
+        title: const Text('BICHOLOVER'),
         centerTitle: false,
       ),
       body: _ChatView(),
