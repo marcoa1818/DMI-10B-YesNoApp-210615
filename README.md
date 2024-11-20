@@ -49,4 +49,4 @@ Realizar una aplicación en Flutter para Dispositivos Móviles, parte de la Unid
 ## Resultados
 <br>
 
-<img src="Img/captura">
+<img src="Img/Captura.jpg">
