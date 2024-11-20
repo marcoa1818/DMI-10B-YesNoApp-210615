@@ -4,6 +4,7 @@ import 'package:flutter_application_1/domain/entities/message.dart';
 class MyMessageBubble extends StatelessWidget {
   final Message message;
 
+
   const MyMessageBubble({
     super.key, 
     required this.message
