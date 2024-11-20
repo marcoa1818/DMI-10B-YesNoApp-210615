@@ -17,7 +17,7 @@ Realizar una aplicación en Flutter para Dispositivos Móviles, parte de la Unid
 ## Estructura de las carpetas 
 <br>
 
-<img src="Img/carpetas.PNG">
+![alt text](carpetas.PNG)
 
 <br>
 <h3> Practica 21 </h3>
@@ -49,4 +49,4 @@ Realizar una aplicación en Flutter para Dispositivos Móviles, parte de la Unid
 ## Resultados
 <br>
 
-<img src="Img/Captura.jpg">
+![alt text](Captura.jpg)
