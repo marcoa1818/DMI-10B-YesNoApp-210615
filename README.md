@@ -17,7 +17,7 @@ Realizar una aplicación en Flutter para Dispositivos Móviles, parte de la Unid
 ### HISTORIAL DE PRÁCTICAS:
 |No.|Nombre|Potenciador|Estatus|
 |--|--|--|--|
-|21||Agregacion de Widgets|6|Finalizada|
+|21|Integracion de Widgets|6|Finalizada|
 |22|Implementacion de la UI|7|Finalizada|
 |23|Implementacion de respuesta del chat|10|Finalizada|
 
